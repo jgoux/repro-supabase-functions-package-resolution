@@ -9,7 +9,7 @@ import type { Database } from "./database.types.ts";
 
 console.log("Hello from Functions!");
 
-Deno.serve({ port: 8888 }, async (req) => {
+Deno.serve(async (req) => {
   const { name } = await req.json();
   const data = {
     message: `Hello ${name}!`,
