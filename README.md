@@ -46,7 +46,7 @@ InvalidWorkerCreation: worker boot error: failed to create the graph: Relative i
 }
 ```
 
-It works as expected both in VSCode Deno LSP and using Deno CLI:
+It works as expected both in VSCode Deno LSP and using Deno CLI (v1.45.2):
 
 ```sh
 deno run --allow-all supabase/functions/queue_worker/index.ts
