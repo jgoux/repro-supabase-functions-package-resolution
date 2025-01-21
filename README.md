@@ -2,6 +2,21 @@
 
 It seems like we're not resolving aliased packages correctly when using subpath imports of an aliased package.
 
+This import should work when using `deno.json`:
+
+```ts
+import "@supabase/functions-js/edge-runtime.d.ts";
+```
+
+```json
+{
+  "imports": {
+    "@supabase/functions-js": "jsr:@supabase/functions-js@^2.4.4",
+    "@supabase/supabase-js": "jsr:@supabase/supabase-js@^2.48.0"
+  }
+}
+```
+
 # Steps to reproduce
 
 1. `pnpm i`
