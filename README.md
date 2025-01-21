@@ -50,7 +50,7 @@ It works as expected both in VSCode Deno LSP and using Deno CLI (v1.45.2):
 
 ```sh
 deno run --allow-all supabase/functions/queue_worker/index.ts
-curl -X POST http://127.0.0.1:8888 \
+curl -X POST http://127.0.0.1:8000 \
   -H "Content-Type: application/json" \
   -d '{"name": "Bob"}'
 ```
