@@ -20,8 +20,8 @@ import "@supabase/functions-js/edge-runtime.d.ts";
 # Steps to reproduce
 
 1. `pnpm i`
-2. `supabase start`
-3. `supabase functions serve`
+2. `pnpm supabase start`
+3. `pnpm supabase functions serve`
 4.
 
 ```sh
